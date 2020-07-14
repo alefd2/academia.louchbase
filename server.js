@@ -2,11 +2,13 @@ const express = require('express'); //
 const nunjucks = require('nunjucks');
 const routes = require("./routes")
 const server = express();
+const methodoverride = require('method-override')
 
 
 //config meddewers
 server.use(express.urlencoded({ extended: true }))
 server.use(express.static('public'))
+server.use(methodoverride('_method'))
 server.use(routes)
 
 //config a engine njk    
