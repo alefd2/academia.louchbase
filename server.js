@@ -4,7 +4,7 @@ const routes = require("./routes")
 const server = express();
 
 
-//config
+//config meddewers
 server.use(express.urlencoded({ extended: true }))
 server.use(express.static('public'))
 server.use(routes)
@@ -12,7 +12,7 @@ server.use(routes)
 //config a engine njk    
 server.set("view engine", "njk")
 
-// pages config
+// config dinamics pages 
 nunjucks.configure("views", {
     express: server,
     autoescape: false,
