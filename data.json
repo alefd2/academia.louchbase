@@ -1,24 +1,6 @@
 {
   "instructors": [
     {
-      "id": 2,
-      "avatar_url": "http://localhost:3000/instructors/create",
-      "name": "sadfads",
-      "birth": -23890291200000,
-      "gender": "F",
-      "services": "asdfasd",
-      "created_at": 1594679774819
-    },
-    {
-      "id": 3,
-      "avatar_url": "http://localhost:3000/instructors/create",
-      "name": "Rebecca",
-      "birth": 859939200000,
-      "gender": "F",
-      "services": "preguiçosa",
-      "created_at": 1594679820160
-    },
-    {
       "id": 4,
       "avatar_url": "https://avatars0.githubusercontent.com/u/46423825?s=460&u=ead1640b97305679a71c8fb723ef1fe43f4dac9a&v=4",
       "name": "alef",
@@ -28,21 +10,12 @@
       "created_at": 1594682875037
     },
     {
-      "id": 5,
-      "avatar_url": "https://avatars0.githubusercontent.com/u/46423825?s=460&u=ead1640b97305679a71c8fb723ef1fe43f4dac9a&v=4",
-      "name": "Alef olivfeira",
-      "birth": 835833600000,
-      "gender": "F",
-      "services": "musculação, natação, dança",
-      "created_at": 1594687913767
-    },
-    {
-      "id": "6",
-      "avatar_url": "https://scontent.ffor16-1.fna.fbcdn.net/v/t31.0-1/p100x100/21949912_1256498987788076_7730101328136050332_o.jpg?_nc_cat=103&_nc_sid=dbb9e7&_nc_ohc=xSwZO34doGYAX-hSTub&_nc_ht=scontent.ffor16-1.fna&_nc_tp=6&oh=c35d8d0c684fbd8e80a22fdadc029960&oe=5F315D50",
+      "id": 6,
+      "avatar_url": "https://th.bing.com/th/id/OIP.myD3GvY-y5-VNKSSDgb-BQAAAA?w=174&h=262&c=7&o=5&dpr=1.1&pid=1.7",
       "name": "cvei",
       "birth": 859939200000,
       "gender": "F",
-      "services": "preguiça, sono, computador statistica, praia",
+      "services": "preguiça, sono",
       "created_at": 1594689111513
     },
     {
@@ -51,7 +24,7 @@
       "name": "rebecca",
       "birth": 859939200000,
       "gender": "F",
-      "services": "preguiça, sono, computador statistica, valor, riqueza, praia",
+      "services": "preguiça, sono, computador",
       "created_at": 1594696256775
     }
   ]

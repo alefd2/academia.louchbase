@@ -3,10 +3,16 @@ const data = require("./data.json")
 const { age, date } = require('./utils')
 
 
+exports.index = function(req, res) {
+
+    return res.render("instructors/index", {instructors: data.instructors})
+}
+
 // SHOW
 exports.show = function(req, res){
     const { id } = req.params
 
+    //Estrutura de repetição buscando o ID na Data
     const foundInstructor = data.instructors.find(function(instructor){
         return instructor.id == id
     })
@@ -37,7 +43,7 @@ exports.post = function(req, res) {
     for(key of keys){
         if (req.body[key] == ""){
             return res.send(`Erro ao preencher o campo ${key}`)
-                }
+        }
          
     }
     let { avatar_url, name, birth, gender, services} = (req.body) 
@@ -84,7 +90,7 @@ exports.edit = function(req,res) {
 
     const instructor = {
         ...foundInstructor,
-        birth: date(foundInstructor.birth)
+        birth: date(foundInstructor.birth),
     }
 
     
@@ -109,7 +115,8 @@ exports.put = function(req, res) {
     const instructor = {
         ...foundInstructor,
         ...req.body,
-        birth: Date.parse(req.body.birth)
+        birth: Date.parse(req.body.birth),
+        id: Number(req.body.id)
     }
 
     data.instructors[index] = instructor
@@ -137,3 +144,4 @@ exports.delete = function(req, res){
         return res.redirect("/instructors")
     })
 }
+
