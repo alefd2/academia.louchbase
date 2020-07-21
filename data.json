@@ -1,14 +1,29 @@
 {
-  "instructors": [
+  "members": [
     {
-      "id": 4,
-      "avatar_url": "https://avatars0.githubusercontent.com/u/46423825?s=460&u=ead1640b97305679a71c8fb723ef1fe43f4dac9a&v=4",
-      "name": "alef",
+      "avatar_url": "http://localhost:3000/members/create",
+      "name": "asdas",
+      "email": "alef@sadfa",
       "birth": 835833600000,
       "gender": "M",
-      "services": "musculação, crosfit, natação",
-      "created_at": 1594682875037
+      "blood": "A1",
+      "weight": "123",
+      "height": "123",
+      "id": 1
     },
+    {
+      "id": 2,
+      "avatar_url": "http://localhost:3000/members/create",
+      "name": "asdfasd",
+      "email": "adfads@asdfsd",
+      "birth": 833155200000,
+      "gender": "F",
+      "blood": "B0",
+      "weight": "123",
+      "height": "123"
+    }
+  ],
+  "instructors": [
     {
       "id": 6,
       "avatar_url": "https://th.bing.com/th/id/OIP.myD3GvY-y5-VNKSSDgb-BQAAAA?w=174&h=262&c=7&o=5&dpr=1.1&pid=1.7",
@@ -26,6 +41,15 @@
       "gender": "F",
       "services": "preguiça, sono, computador",
       "created_at": 1594696256775
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://avatars0.githubusercontent.com/u/46423825?s=460&u=ead1640b97305679a71c8fb723ef1fe43f4dac9a&v=4",
+      "name": "Alef oliveira",
+      "birth": 835833600000,
+      "gender": "M",
+      "services": "Musculação, natação",
+      "created_at": 1595287284609
     }
   ]
 }

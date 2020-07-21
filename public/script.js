@@ -1,18 +1,9 @@
-const modalOverlay = document.querySelector('.modal-overlay');
-const cards = document.querySelectorAll('.card');
+const currentPage = location.pathname;
+const menuItems = document.querySelectorAll("header .links a")
 
-for(let card of cards){
-    card.addEventListener("click", () => {
-        const videdoID = card.getAttribute("id");
-        window.location.href = `/video?id=${videdoID}`;
-       
-    });
+for(item of menuItems) {
+    if(currentPage.includes(item.getAttribute("href"))) {
+        item.classList.add("active")
+    }
 }
 
-
-//metodo de fechar o modal!
-/*document.querySelector('.close-modal').addEventListener("click", () => {
-    modalOverlay.classList.remove('active');
-    modalOverlay.querySelector("iframe").src = "";
-})
-*/
