@@ -7,32 +7,6 @@ exports.index = function(req, res) {
 
     return res.render("instructors/index", {instructors: data.instructors})
 }
-
-// SHOW
-exports.show = function(req, res){
-    const { id } = req.params
-
-    //Estrutura de repetição buscando o ID na Data
-    const foundInstructor = data.instructors.find(function(instructor){
-        return instructor.id == id
-    })
-
-    if(!foundInstructor) return res.send("instructor not found");
-    
-    
-    const instructor = {
-
-        ...foundInstructor,
-        age: age(foundInstructor.birth),
-        services: foundInstructor.services.split(','),
-        created_at: new Intl.DateTimeFormat('en-GB').format(foundInstructor.created_at),
-    }
-
-
-    return res.render("instructors/show", {
-        instructor: instructor
-    })
-} 
 // CREATE
 exports.create = function(req, res){
     return res.render("instructors/create")
@@ -80,7 +54,31 @@ exports.post = function(req, res) {
     })
 
 }
+// SHOW
+exports.show = function(req, res){
+    const { id } = req.params
 
+    //Estrutura de repetição buscando o ID na Data
+    const foundInstructor = data.instructors.find(function(instructor){
+        return instructor.id == id
+    })
+
+    if(!foundInstructor) return res.send("instructor not found");
+    
+    
+    const instructor = {
+
+        ...foundInstructor,
+        age: age(foundInstructor.birth),
+        services: foundInstructor.services.split(','),
+        created_at: new Intl.DateTimeFormat('en-GB').format(foundInstructor.created_at),
+    }
+
+
+    return res.render("instructors/show", {
+        instructor: instructor
+    })
+} 
 //EDIT
 exports.edit = function(req,res) {
 
@@ -94,7 +92,7 @@ exports.edit = function(req,res) {
 
     const instructor = {
         ...foundInstructor,
-        birth: date(foundInstructor.birth),
+        birth: date(foundInstructor.birth).iso
     }
 
     

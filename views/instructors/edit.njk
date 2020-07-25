@@ -28,9 +28,18 @@
                     <button type="submit">Deletar</button>
                 </form>
             </section>
-        
 
+                    
+                <script>
+                            const formDelete = document.querySlector("#form-delete")
+                            formDelete.addEventListner("submit", function(e){
+                                const confirmation = confirm("Deseja deletar?")
+                                if(!confirmation){
+                                    e.preventDefault()
+                                }
+                            })
 
+                </script>
 
     </div>
 

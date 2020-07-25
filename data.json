@@ -1,47 +1,6 @@
 {
-  "members": [
-    {
-      "avatar_url": "http://localhost:3000/members/create",
-      "name": "asdas",
-      "email": "alef@sadfa",
-      "birth": 835833600000,
-      "gender": "M",
-      "blood": "A1",
-      "weight": "123",
-      "height": "123",
-      "id": 1
-    },
-    {
-      "id": 2,
-      "avatar_url": "http://localhost:3000/members/create",
-      "name": "asdfasd",
-      "email": "adfads@asdfsd",
-      "birth": 833155200000,
-      "gender": "F",
-      "blood": "B0",
-      "weight": "123",
-      "height": "123"
-    }
-  ],
+  "members": [],
   "instructors": [
-    {
-      "id": 6,
-      "avatar_url": "https://th.bing.com/th/id/OIP.myD3GvY-y5-VNKSSDgb-BQAAAA?w=174&h=262&c=7&o=5&dpr=1.1&pid=1.7",
-      "name": "cvei",
-      "birth": 859939200000,
-      "gender": "F",
-      "services": "preguiça, sono",
-      "created_at": 1594689111513
-    },
-    {
-      "id": 7,
-      "avatar_url": "https://scontent.ffor16-1.fna.fbcdn.net/v/t31.0-1/p100x100/21949912_1256498987788076_7730101328136050332_o.jpg?_nc_cat=103&_nc_sid=dbb9e7&_nc_ohc=xSwZO34doGYAX-hSTub&_nc_ht=scontent.ffor16-1.fna&_nc_tp=6&oh=c35d8d0c684fbd8e80a22fdadc029960&oe=5F315D50",
-      "name": "rebecca",
-      "birth": 859939200000,
-      "gender": "F",
-      "services": "preguiça, sono, computador",
-      "created_at": 1594696256775
-    },
     {
       "id": 3,
       "avatar_url": "https://avatars0.githubusercontent.com/u/46423825?s=460&u=ead1640b97305679a71c8fb723ef1fe43f4dac9a&v=4",
@@ -50,6 +9,15 @@
       "gender": "M",
       "services": "Musculação, natação",
       "created_at": 1595287284609
+    },
+    {
+      "id": 4,
+      "avatar_url": "https://scontent-for1-1.xx.fbcdn.net/v/t1.0-1/p100x100/60734784_2358538670872830_752612195929423872_o.jpg?_nc_cat=108&_nc_sid=dbb9e7&_nc_ohc=xYukvqp1Sc0AX9LiXJv&_nc_ht=scontent-for1-1.xx&_nc_tp=6&oh=86764d733049585f06c3129ac3a5c943&oe=5F3F5681",
+      "name": "Renan",
+      "birth": 835833600000,
+      "gender": "M",
+      "services": "Peidar, dormir, sono",
+      "created_at": 1595445499728
     }
   ]
 }

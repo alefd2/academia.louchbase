@@ -1,34 +1,12 @@
 const fs = require('fs');
 const data = require("../data.json") 
-const { age, date } = require('../utils')
+const { date } = require('../utils')
 
 
 exports.index = function(req, res) {
 
     return res.render("members/index", { members: data.members })
 }
-// SHOW
-exports.show = function(req, res){
-    const { id } = req.params
-
-    //Estrutura de repetição buscando o ID na Data
-    const foundMember = data.members.find(function(member){
-        return member.id == id
-    })
-
-    if(!foundMember) return res.send("member not found");
-    
-    
-    const member = {
-
-        ...foundMember,
-        age: age(foundMember.birth)
-    }
-
-    return res.render("members/show", {
-        member: member
-    })
-} 
 //CREATE
 exports.create = function(req, res){
     return res.render("members/create")
@@ -73,6 +51,28 @@ exports.post = function(req, res) {
     })
 
 }
+// SHOW
+exports.show = function(req, res){
+    const { id } = req.params
+
+    //Estrutura de repetição buscando o ID na Data
+    const foundMember = data.members.find(function(member){
+        return member.id == id
+    })
+
+    if(!foundMember) return res.send("member not found");
+    
+    
+    const member = {
+
+        ...foundMember,
+        birth: date(foundMember.birth).birthDay
+    }
+
+    return res.render("members/show", {
+        member: member
+    })
+} 
 //EDIT
 exports.edit = function(req,res) {
 
@@ -86,7 +86,7 @@ exports.edit = function(req,res) {
 
     const member = {
         ...foundMember,
-        birth: date(foundMember.birth),
+        birth: date(foundMember.birth).iso,
     }
 
     
