@@ -1,23 +1,26 @@
 {
-  "members": [],
+  "members": [
+    {
+      "id": 1,
+      "avatar_url": "https://xesque.rocketseat.dev/users/avatar/profile-1078983e-98ab-422c-afa2-1f00ea145d3f-1597063912512.jpg",
+      "name": "adsfasdf",
+      "email": "adsad2@sadf",
+      "birth": 824947200000,
+      "gender": "M",
+      "blood": "A+",
+      "weight": "123",
+      "height": "123"
+    }
+  ],
   "instructors": [
     {
-      "id": 3,
-      "avatar_url": "https://avatars0.githubusercontent.com/u/46423825?s=460&u=ead1640b97305679a71c8fb723ef1fe43f4dac9a&v=4",
-      "name": "Alef oliveira",
-      "birth": 835833600000,
+      "id": 1,
+      "avatar_url": "https://xesque.rocketseat.dev/users/avatar/profile-1078983e-98ab-422c-afa2-1f00ea145d3f-1597063912512.jpg",
+      "name": "asdfasd",
+      "birth": 1605052800000,
       "gender": "M",
-      "services": "Musculação, natação",
-      "created_at": 1595287284609
-    },
-    {
-      "id": 4,
-      "avatar_url": "https://scontent-for1-1.xx.fbcdn.net/v/t1.0-1/p100x100/60734784_2358538670872830_752612195929423872_o.jpg?_nc_cat=108&_nc_sid=dbb9e7&_nc_ohc=xYukvqp1Sc0AX9LiXJv&_nc_ht=scontent-for1-1.xx&_nc_tp=6&oh=86764d733049585f06c3129ac3a5c943&oe=5F3F5681",
-      "name": "Renan",
-      "birth": 835833600000,
-      "gender": "M",
-      "services": "Peidar, dormir, sono",
-      "created_at": 1595445499728
+      "services": "asdfasd",
+      "created_at": 1598039310215
     }
   ]
 }
